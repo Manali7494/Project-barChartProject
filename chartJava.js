@@ -1,5 +1,23 @@
 
 
+function drawBarChart(data,  options,  element) {
+
+  var numValue = data.length;
+  var barColors = options.barColors;
+  var barSpace = options.barSpace[0];
+  var labelColor = options.labelProp[0];
+  var labelPos = options.labelProp[1].toLowerCase();
+  var title = options.title[0];
+  var titleSize = options.title[1];
+  var titleColor = options.title[2];
+  var yAxisLabel = options.axisLabel[0];
+  var xAxisLabel = options.axisLabel[1];
+  var xCat = options.xCat;
+  var ytickMarks = options.ytickMarks[0];
+  xCat.push(".");
+
+}
+
 var values = [[10,10,10], [3], [11], [8], [4, 5], [4, 7, 1, 1], [8], [2]];
 var options =
 {
