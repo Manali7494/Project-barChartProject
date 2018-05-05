@@ -16,6 +16,11 @@ function drawBarChart(data,  options,  element) {
   var ytickMarks = options.ytickMarks[0];
   xCat.push(".");
 
+  // Page initalization
+  $(element).css({"text-align": "center"});
+  $(element).append("<h1>" + title + "</h1>");
+
+
 }
 
 var values = [[10,10,10], [3], [11], [8], [4, 5], [4, 7, 1, 1], [8], [2]];
