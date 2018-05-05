@@ -20,6 +20,10 @@ function drawBarChart(data,  options,  element) {
   $(element).css({"text-align": "center"});
   $(element).append("<h1>" + title + "</h1>");
 
+  // Create basic layout
+  $(element).append("<table>");
+  var templateArray = [element, data, xAxisLabel, xCat];
+  tableTemplate(templateArray);
 
 }
 
