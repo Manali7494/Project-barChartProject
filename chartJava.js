@@ -32,6 +32,10 @@ function tableTemplate(templateArray){
   $(element).append("</div>");
 }
 
+function createBars(data, barColors){
+  var lengthArray = [];
+}
+
 function drawBarChart(data,  options,  element) {
 
   var numValue = data.length;
