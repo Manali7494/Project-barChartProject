@@ -4,6 +4,32 @@ function tableTemplate(templateArray){
   var data = templateArray[1];
   var xAxisLabel = templateArray[2];
   var xCat = templateArray[3];
+
+  // Create a table
+  var trlength = data.length;
+  var tdlength = 4;
+  for (var i = 0; i <= trlength; i++) {
+    $(element).append("<tr>");
+    for (var j = 0; j < tdlength; j++){
+      if (i === 0 && j === 0) {
+        $(element).append("<td id='xAxis'>" + "<strong>" + xAxisLabel + "</strong>" + "</td>");
+      } else if (j === 0) {
+        $(element).append("<td></td>");
+      } else if (j === 1) {
+        $(element).append("<td class='catX'>" + xCat[i] + "</td>");
+      } else if (j === 2 & i === trlength){
+        $(element).append("<td class='vert'><div id='vertEnd'></div></td>");
+      } else if (j === 2){
+        $(element).append("<td class='vert'></td>");
+      } else if (j === 3 && i === trlength){
+        $(element).append("<td id='space'>");
+      } else if (j === 3){
+        $(element).append("<td id='row" + i.toString() + "'>");
+      }
+    }
+    $(element).append("</tr>");
+  }
+  $(element).append("</div>");
 }
 
 function drawBarChart(data,  options,  element) {
