@@ -1,4 +1,10 @@
 
+function tableTemplate(templateArray){
+  var element = templateArray[0];
+  var data = templateArray[1];
+  var xAxisLabel = templateArray[2];
+  var xCat = templateArray[3];
+}
 
 function drawBarChart(data,  options,  element) {
 
