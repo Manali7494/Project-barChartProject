@@ -56,7 +56,8 @@ function drawBarChart(data,  options,  element) {
   $(element).append("<table>");
   var templateArray = [element, data, xAxisLabel, xCat];
   tableTemplate(templateArray);
-
+  var lengthArray = createBars(data,  barColors);
+  $(element).append("</table>");
 }
 
 var values = [[10,10,10], [3], [11], [8], [4, 5], [4, 7, 1, 1], [8], [2]];
