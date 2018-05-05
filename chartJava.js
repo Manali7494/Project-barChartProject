@@ -34,6 +34,21 @@ function tableTemplate(templateArray){
 
 function createBars(data, barColors){
   var lengthArray = [];
+  for (var l = 0; l < data.length; l++) {
+    var sum = 0;
+    for (var k = 0; k < data[l].length; k++) {
+      var rowid = "#row" + l.toString();
+      $(rowid).append("<div id='" + l.toString() + k.toString() + "'><div class='value'>" + data[l][k] + " </div> </div>");
+      var id = "#" + l.toString() + k.toString();
+      var barWidth = (data[l][k] * 20).toString() + 'px';
+      var num = data[l][k];
+      sum = sum + (num * 20);
+      var color = barColors[l][k];
+      $(id).css({ "width": barWidth, "height": "50px", "background-color": color, "float": "left", "border": "black 0.5px solid" });
+    }
+    lengthArray.push(sum);
+  }
+  return lengthArray;
 }
 
 function drawBarChart(data,  options,  element) {
