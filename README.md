@@ -88,6 +88,8 @@ The bar graph was created using just html, css, javascript, and jquery. To compl
 * **Nested Arrays in Objects**
   -- [W3Schools](https://www.w3schools.com/js/js_json_arrays.asp)
 
+.
+
     myObj = {
     "name":"John",
 
@@ -100,6 +102,8 @@ The bar graph was created using just html, css, javascript, and jquery. To compl
     ]
     }
 * **HTML Table**  -- [W3Schools](https://www.w3schools.com/html/html_tables.asp)
+
+.
 
     <table style="width:100%">
       <tr>
@@ -121,6 +125,8 @@ The bar graph was created using just html, css, javascript, and jquery. To compl
 
 * **Float and Clear** -- [W3Schools](https://www.w3schools.com/css/css_float.asp)
 
+.
+
     .img-container {
        float: left;
        width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
@@ -128,6 +134,8 @@ The bar graph was created using just html, css, javascript, and jquery. To compl
     }
 
 * **jQuery DOM** --  [W3Schools](https://www.w3schools.com/jquery/jquery_syntax.asp)
+
+.
 
     $("button").click(function(){
         $("#test").hide();
@@ -137,7 +145,7 @@ The bar graph was created using just html, css, javascript, and jquery. To compl
 *  **jQuery - Append**
  -- [jQuery.com](http://api.jquery.com/append/)
 
-
+.
 
     <script>
     $( "p" ).append( "<strong>Hello</strong>" );
@@ -145,6 +153,7 @@ The bar graph was created using just html, css, javascript, and jquery. To compl
 
 * **jQuery Multiple CSS Properties** -- [w3Schools](https://www.w3schools.com/jquery/jquery_css.asp)
 
+.
 
     $("p").css({
       "background-color": "yellow", "font-size": "200%"
