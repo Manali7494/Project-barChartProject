@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bar Chart</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id ="chart"></div>
+    <hr>
+    <script src="jquery.js"></script>
+    <script src="chartJava.js"></script>
+    <script>
+      $(document).ready(function(){
+        var values = [[1], [2, 4, 5], [5]];
+        var options =
+        {
+          barColors: [["red"], ["orange", "yellow","lightblue"], ["pink"]],
+          barSpace: ["10px"],
+          labelProp: ["black", "middle"],
+          title: ["Y as a function of X", "20px", "red"],
+          axisLabel: ["y Axis", "x Axis"],
+          xCat: ["Cat1","Cat2","Cat4"]
+        };
+        var dom = "#chart";
+        drawBarChart(values, options, dom);
+      });
+    </script>
+  </body>
+</html>
