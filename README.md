@@ -49,7 +49,12 @@ The list of features it supports are as follows:
 * Labels for x Values
 
 ##5. Known Issues/Bugs
+To maintain proper layout of the graph, there are few limitations of the graph. If the limit is exceeded, values of bars will be displayed properly. However, the appearance of the x and y axis will be compromised.
 
+* Horizontal stacked value is limited to a 50 for each category.
+ * If limit is exceeded, the y tick values extend longer than the y axis
+* Bar spacing with a maximum of 50 px
+ * If limit is exceeded, the x axis will be extended near the end of the graph
 ##6. Future features
 
 ##7. External Resources
