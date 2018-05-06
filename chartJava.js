@@ -74,13 +74,13 @@ function positioning (posArray){
   // Calculating y ticks:
   var maxLength = Math.max.apply(null, lengthArray);
   var str = "";
-  var strLength = Math.ceil(maxLength/17);
+  var strLength = Math.ceil(maxLength / 17);
   var num = 0;
   for (var i = 0; i < (strLength); i++) {
     str += "|";
   }
   $("#space").html(str);
-  var horzLength = (maxLength + (20*9)).toString() + "px";
+  var horzLength = (maxLength + (20 * 9)).toString() + "px";
   $("#space").append("<div id='horz'></div>");
   var arrayReturn = [pos, horzLength,  totalHeight];
   return arrayReturn;
@@ -100,7 +100,7 @@ function cssStyle(styleArray){
   $(".vert").css({"background-color": "black", "width": "5px"});
   $(".value").css({"transform": "translateY(" + pos + ")", "color": labelColor});
   $("#horz").css({"width": horzLength, "height": "5px", "background-color": "black", "transform": "translateY(0%)", "margin": "0px", "padding": "0px"});
-  $("#space").css({"letter-spacing":"17px","margin-left": "0px", "padding": "0px","text-align":"left"});
+  $("#space").css({"letter-spacing": "17px", "margin-left": "0px", "padding": "0px", "text-align": "left"});
   $("#vertEnd").css({"height": "45px", "transform": "translateY(120%)", "width": "8px", "background-color": "white", "border": "white solid 1px"});
   $("h1").css({"color": titleColor, "font-size": titleSize, "transform": "translateX(-25%)"});
   $(".catX").css({"transform": "translateY(-40%)"});
@@ -108,8 +108,8 @@ function cssStyle(styleArray){
   $("h3").css({"transform": "translateX(-25%)"});
 }
 
+// Main Function
 function drawBarChart(data,  options,  element) {
-
   var numValue = data.length;
   var barColors = options.barColors;
   var barSpace = options.barSpace[0];
@@ -121,7 +121,6 @@ function drawBarChart(data,  options,  element) {
   var yAxisLabel = options.axisLabel[0];
   var xAxisLabel = options.axisLabel[1];
   var xCat = options.xCat;
-  var ytickMarks = options.ytickMarks[0];
   xCat.push(".");
 
   // Page initalization
@@ -136,7 +135,7 @@ function drawBarChart(data,  options,  element) {
   $(element).append("</table>");
 
   // Label and axis positioning
-  var posArray=[labelPos,numValue,lengthArray];
+  var posArray = [labelPos, numValue, lengthArray];
   var arrayReturn = positioning(posArray);
   var pos = arrayReturn[0];
   var horzLength = arrayReturn[1];
@@ -148,16 +147,15 @@ function drawBarChart(data,  options,  element) {
   cssStyle(cssStyleArray);
 }
 
-var values = [[10,10,10], [3], [11], [8], [4, 5], [4, 7, 1, 1], [8], [2]];
+var values = [[10, 10, 10], [3], [11], [8], [4, 5], [4, 7, 1, 1], [8], [2]];
 var options =
 {
-  barColors: [["red", "yellow","pink","orange","red","lightblue"], ["orange"], ["pink", "yellow"], ["yellow"], ["red", "lightblue"], ["green"], ["black"], ["orange"]],
-  barSpace: ["20px"],
+  barColors: [["red", "yellow", "pink", "orange", "red", "lightblue"], ["orange"], ["pink", "yellow"], ["yellow"], ["red", "lightblue"], ["green"], ["black"], ["orange"]],
+  barSpace: ["10px"],
   labelProp: ["green", "top"],
   title: ["Y as a function of X", "20px", "red"],
   axisLabel: ["y Axis", "x Axis"],
-  xCat: ["Category1", "Category2", "Cat3", "Cat4", "Cat5", "Cat6", "Cat7", "Cat8"],
-  ytickMarks:[3]
+  xCat: ["Category1", "Category2", "Cat3", "Cat4", "Cat5", "Cat6", "Cat7", "Cat8"]
 
 };
 var dom = "#chart";
