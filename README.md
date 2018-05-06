@@ -2,6 +2,7 @@
 Extra Project Prep
 
 ##1. About
+The goal of the project is to make a simple horizontal bar chart with single and multiple stacked values. Since the requirement was simple, it was created without using cvs or canvas. It was created only by using javascript, css, and jquery.
 
 ##2. Example Screenshots
 
