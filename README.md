@@ -38,6 +38,15 @@ Example:
 
 
 ##4. Feature List
+The list of features it supports are as follows:
+
+* Single and multiple values
+* Individual Bar Colors (single and multi-values)
+* Spacing of the horizontal bars
+* Color of individual labels
+* Position of the labels (ie top, middle or bottom)
+* Title with the ability to change size and color
+* Labels for x Values
 
 ##5. Known Issues/Bugs
 
