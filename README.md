@@ -1,19 +1,19 @@
 # barChartProject
 Extra Project Prep
 
-##1. About
+## 1. About
 The goal of the project is to make a simple horizontal bar chart with single and multiple stacked values. Since the requirement was simple, it was created without using cvs or canvas. It was created only by using javascript, css, and jquery.
 
-##2. Example Screenshots
+## 2. Example Screenshots
 
-####1. Single value chart
+#### 1. Single value chart
 ![Favourite fruit](FavouriteFruit.png "Favourite fruits as a single value chart")
 
-####2. Multiple stacked chart
+#### 2. Multiple stacked chart
 
 ![Students](students.png "Number of students as stacked bar chart")
 
-##3. API function
+## 3. API function
 The main API function that the user will use is the drawBarChart function. It takes in 3 parameters:
 
  1. Data which is a set of nested arrays with numerical values
@@ -44,7 +44,7 @@ Example:
  ```var dom = "#chart";```
 
 
-##4. Feature List
+## 4. Feature List
 The list of features it supports are as follows:
 
 * Single and multiple values
@@ -55,7 +55,7 @@ The list of features it supports are as follows:
 * Title with the ability to change size and color
 * Labels for x Values
 
-##5. Known Issues/Bugs
+## 5. Known Issues/Bugs
 To maintain proper layout of the graph, there are few limitations of the graph. If the limit is exceeded, values of bars will be displayed properly. However, the appearance of the x and y axis will be compromised.
 
 * Horizontal stacked value is limited to a 50 for each category.
@@ -63,7 +63,7 @@ To maintain proper layout of the graph, there are few limitations of the graph. 
 * Bar spacing with a maximum of 50 px
  * If limit is exceeded, the x axis will be extended near the end of the graph
 
-##6. Future features
+## 6. Future features
 A list of future features:
 
 * More individual animations to bar graph
@@ -71,5 +71,5 @@ A list of future features:
 * Extend the limit of stacked value and bar spacing so layout is not affected
 
 
-##7. External Resources
+## 7. External Resources
 
