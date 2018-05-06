@@ -55,7 +55,14 @@ To maintain proper layout of the graph, there are few limitations of the graph. 
  * If limit is exceeded, the y tick values extend longer than the y axis
 * Bar spacing with a maximum of 50 px
  * If limit is exceeded, the x axis will be extended near the end of the graph
+
 ##6. Future features
+A list of future features:
+
+* More individual animations to bar graph
+* Customisation with tooltip values to display value upon mouse hover
+* Extend the limit of stacked value and bar spacing so layout is not affected
+
 
 ##7. External Resources
 
