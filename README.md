@@ -11,7 +11,7 @@ The goal of the project is to make a simple horizontal bar chart with single and
 
 ####2. Multiple stacked chart
 
-![Students] (StudentsInClass.png "Number of students as stacked bar chart")
+![Students] (students.png "Number of students as stacked bar chart")
 
 ##3. API function
 The main API function that the user will use is the drawBarChart function. It takes in 3 parameters:
