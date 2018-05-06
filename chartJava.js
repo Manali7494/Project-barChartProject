@@ -67,6 +67,9 @@ function positioning (posArray){
     pos = "200%";
   }
 
+  // Calculating height of x Axis
+  var totalHeight = (20 * numValue);
+  totalHeight = "-" + (totalHeight) + "px";
 }
 
 function drawBarChart(data,  options,  element) {
