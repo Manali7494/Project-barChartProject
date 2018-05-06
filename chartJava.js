@@ -86,6 +86,16 @@ function positioning (posArray){
   return arrayReturn;
 }
 
+function cssStyle(styleArray){
+  var barSpace = styleArray[0];
+  var pos = styleArray[1];
+  var labelColor = styleArray[2];
+  var horzLength = styleArray[3];
+  var titleColor = styleArray[4];
+  var titleSize = styleArray[5];
+  var totalHeight = styleArray[6];
+}
+
 function drawBarChart(data,  options,  element) {
 
   var numValue = data.length;
