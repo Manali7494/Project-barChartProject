@@ -76,9 +76,88 @@ A list of future features:
 The bar graph was created using just html, css, javascript, and jquery. To complete the function, the following references were used for fundamentals and project specific topics:
 
 ### 1. Basics:
- * **HTML/Javascript/CSS** :
-    * [W3Schools] (https://www.w3schools.com/)
- * **JQuery**
-    * [jQuery.com - CSS] (http://api.jquery.com/category/css/)
-    * [LearnCode.academy] (https://www.youtube.com/watch?v=hMxGhHNOkCU&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=15)
 
+ * **HTML/Javascript/CSS** :
+    * [W3Schools](https://www.w3schools.com/)
+ * **JQuery**
+    * [jQuery.com - CSS](http://api.jquery.com/category/css/)
+    * [LearnCode.academy](https://www.youtube.com/watch?v=hMxGhHNOkCU&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=15)
+
+### 2. Project Specific Topics:
+
+* **Nested Arrays in Objects**
+  -- [W3Schools](https://www.w3schools.com/js/js_json_arrays.asp)
+
+.
+
+    myObj = {
+    "name":"John",
+
+    "age":30,
+
+    "cars": [
+        { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+        { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+        { "name":"Fiat", "models":[ "500", "Panda" ] }
+    ]
+    }
+* **HTML Table**  -- [W3Schools](https://www.w3schools.com/html/html_tables.asp)
+
+.
+
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+     </tr>
+    </table>
+
+* **Float and Clear** -- [W3Schools](https://www.w3schools.com/css/css_float.asp)
+
+.
+
+    .img-container {
+       float: left;
+       width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+       padding: 5px; /* if you want space between the images */
+    }
+
+* **jQuery DOM** --  [W3Schools](https://www.w3schools.com/jquery/jquery_syntax.asp)
+
+.
+
+    $("button").click(function(){
+        $("#test").hide();
+    });
+
+
+*  **jQuery - Append**
+ -- [jQuery.com](http://api.jquery.com/append/)
+
+
+
+    <script>
+    $( "p" ).append( "<strong>Hello</strong>" );
+    </script>
+
+* **jQuery Multiple CSS Properties** -- [w3Schools](https://www.w3schools.com/jquery/jquery_css.asp)
+
+
+    $("p").css({
+      "background-color": "yellow", "font-size": "200%"
+    });
+
+
+* **Animations**
+  * [jQuery - User Interface(Toggle)](https://jqueryui.com/toggle/)
