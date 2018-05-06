@@ -124,9 +124,10 @@ function drawBarChart(data,  options,  element) {
   xCat.push(".");
 
   // Page initalization
+  $(element).fadeToggle(0);
+  $(element).fadeToggle(4000);
   $(element).css({"text-align": "center"});
   $(element).append("<h1>" + title + "</h1>");
-
   // Create basic layout
   $(element).append("<table>");
   var templateArray = [element, data, xAxisLabel, xCat];
