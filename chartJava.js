@@ -70,6 +70,20 @@ function positioning (posArray){
   // Calculating height of x Axis
   var totalHeight = (20 * numValue);
   totalHeight = "-" + (totalHeight) + "px";
+
+  // Calculating y ticks:
+  var maxLength = Math.max.apply(null, lengthArray);
+  var str = "";
+  var strLength = Math.ceil(maxLength/17);
+  var num = 0;
+  for (var i = 0; i < (strLength); i++) {
+    str += "|";
+  }
+  $("#space").html(str);
+  var horzLength = (maxLength + (20*9)).toString() + "px";
+  $("#space").append("<div id='horz'></div>");
+  var arrayReturn = [pos, horzLength,  totalHeight];
+  return arrayReturn;
 }
 
 function drawBarChart(data,  options,  element) {
