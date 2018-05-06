@@ -71,5 +71,14 @@ A list of future features:
 * Extend the limit of stacked value and bar spacing so layout is not affected
 
 
-## 7. External Resources
+## 7. References
+
+The bar graph was created using just html, css, javascript, and jquery. To complete the function, the following references were used for fundamentals and project specific topics:
+
+### 1. Basics:
+ * **HTML/Javascript/CSS** :
+    * [W3Schools] (https://www.w3schools.com/)
+ * **JQuery**
+    * [jQuery.com - CSS] (http://api.jquery.com/category/css/)
+    * [LearnCode.academy] (https://www.youtube.com/watch?v=hMxGhHNOkCU&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=15)
 
