@@ -51,6 +51,12 @@ function createBars(data, barColors){
   return lengthArray;
 }
 
+function positioning (posArray){
+  var labelPos = posArray[0];
+  var numValue = posArray[1];
+  var lengthArray = posArray[2];
+}
+
 function drawBarChart(data,  options,  element) {
 
   var numValue = data.length;
