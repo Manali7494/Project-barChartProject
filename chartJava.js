@@ -55,6 +55,18 @@ function positioning (posArray){
   var labelPos = posArray[0];
   var numValue = posArray[1];
   var lengthArray = posArray[2];
+
+  // Label position
+  var pos;
+
+  if (labelPos === "top") {
+    pos = "10%";
+  } else if (labelPos === "middle"){
+    pos = "100%";
+  } else if (labelPos === "bottom"){
+    pos = "200%";
+  }
+
 }
 
 function drawBarChart(data,  options,  element) {
