@@ -120,6 +120,10 @@ function drawBarChart(data,  options,  element) {
   var horzLength = arrayReturn[1];
   var totalHeight = arrayReturn[2];
   $(element).append("<h3>" + yAxisLabel + "</h3>");
+
+  // CSS Styles
+  var cssStyleArray = [barSpace, pos, labelColor, horzLength, titleColor, titleSize, totalHeight];
+  cssStyle(cssStyleArray);
 }
 
 var values = [[10,10,10], [3], [11], [8], [4, 5], [4, 7, 1, 1], [8], [2]];
