@@ -94,6 +94,18 @@ function cssStyle(styleArray){
   var titleColor = styleArray[4];
   var titleSize = styleArray[5];
   var totalHeight = styleArray[6];
+
+  $("table").css({"margin-left": "auto", "margin-right": "auto", "border": "black solid 1px"});
+  $("td").css({"height": "15px", "padding": "0px", "padding-bottom": barSpace, "padding-top": "0px"});
+  $(".vert").css({"background-color": "black", "width": "5px"});
+  $(".value").css({"transform": "translateY(" + pos + ")", "color": labelColor});
+  $("#horz").css({"width": horzLength, "height": "5px", "background-color": "black", "transform": "translateY(0%)", "margin": "0px", "padding": "0px"});
+  $("#space").css({"letter-spacing":"17px","margin-left": "0px", "padding": "0px","text-align":"left"});
+  $("#vertEnd").css({"height": "45px", "transform": "translateY(120%)", "width": "8px", "background-color": "white", "border": "white solid 1px"});
+  $("h1").css({"color": titleColor, "font-size": titleSize, "transform": "translateX(-25%)"});
+  $(".catX").css({"transform": "translateY(-40%)"});
+  $("#xAxis").css({"transform": "rotate(270deg) translateX(" + totalHeight + ")", "font-size": "20px", "padding-right": "50px"});
+  $("h3").css({"transform": "translateX(-25%)"});
 }
 
 function drawBarChart(data,  options,  element) {
